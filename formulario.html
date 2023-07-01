@@ -1,0 +1,282 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>cadastro</title>
+
+    <style>
+        .required-label::after {content:'*'; color: red;}
+    </style>
+
+   
+
+</head>
+<body>
+    <div>
+        <h1>FORMULÁRIO:</h1> <P>
+            preencha com os dados necessários:
+        </P>
+        <br>
+    </div>
+
+    <form action="/action_page.php">
+        
+        <fieldset>
+            
+            <div> <legend>Dados pessoais:</legend> <br>
+                <label class="required-label">Nome Completo:</label> 
+                <input type="text" name="Nome Completo" id="Nome Completo"> <br> <br>
+            </div>
+    
+            <div>
+                <label class="required-label">CPF:</label>
+                <input type="text" name="CPF" id="CPF"> <br> <br>
+            </div>
+
+            <div>
+                <label class="required-label">Data de nascimento:</label>
+                <input type="text" name="Data de nascimento" id="Data de nascimento"> <br> <br>
+            </div>
+            <div> 
+                <label class="required-label">Sexo:</label> 
+               <label>
+                 <input type="radio" id="F" name="Sexo" value="F" >F
+                </label> 
+                <label>
+                <input type="radio" id="M" name="Sexo" value="M" >M
+            </label>
+            
+
+            <label class="required-label">   Estado Civil:</label>
+            <select id="Estado Civil" name="Estado Civil">
+            <option value="Solteiro">Solteiro</option>
+            <option value="Casado">Casado</option>
+            <option value="Viúvo">Viúvo</option>
+            <option value="Divorcidado">Divorciado</option>
+            </select>
+
+            </div>
+
+
+        </fieldset>
+
+
+        <fieldset>
+            <div> <legend>Dados de contato:</legend> <br>
+                <label class="required-label">Email:</label> 
+                <input type="email" name="Email" id="Email"> <br> <br>
+             </div>
+
+             <div>
+                <label class="required-label">Web Site:</label>   
+                <input type="text" name="Web Site" id="Web Site">  <br><br>
+
+                <label class="required-label">Telefone: </label>
+               <input type="text" name="Telefone" id="Telefone"> 
+               
+
+              <label  class="required-label">Celular:  </label>
+                <input type="text" name="Celular" id="Celular">  <br><br>
+
+                
+            
+            
+            </div>
+
+ 
+
+            <div>
+                <label class="required-label">Endereço:</label>  
+                <input type="text" name="Endereço" id="Endereço"> <br> <br>
+            </div>
+
+            <div>
+                <label class="required-label">Bairro:</label>   
+                <input type="text" name="Bairro" id="Bairro"> 
+
+                <label class="required-label">Cidade:</label>   
+                <input type="text" name="Cidade" id="Cidade">  <br> <br>
+            </div>    
+                 
+                
+                <div>    
+                <label class="required-label">CEP:</label>
+                    <input type="text" name="CEP" id="CEP" >
+
+                    <label class="required-label">UF:</label>
+                    <select id="UF" name="UF">
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                    </select>
+         
+                </div> 
+            
+        </fieldset>
+        
+        <fieldset>  
+            <div><legend>Dados de cadastro:</legend> <br>
+
+                <label class="required-label">Login:</label>   
+                <input type="text" name="Login" id="Login"> 
+
+                <label class="required-label">Senha:</label>   
+                <input type="text" name="Senha" id="Senha">  <br> <br>
+            
+            <div>
+
+            <div>
+                </label>
+
+                <legend>Deseja receber informações sobre os seguintes assuntos abaixo:</legend> </label> <br>
+
+                <input type="checkbox" id="resposta" name="Tecnologia" value="resposta">
+                <label for="resposta"> Tecnologia</label>
+                
+                <input type="checkbox" id="resposta" name="resposta" value="Esportes">
+                <label for="resposta">Esportes</label>
+
+                <input type="checkbox" id="resposta" name="resposta" value="Automóveis">
+                <label for="resposta">Automóveis</label>
+
+                <input type="checkbox" id="resposta" name="resposta" value="Culinária">
+                <label for="resposta">Culinária</label>
+
+                <input type="checkbox" id="resposta" name="resposta" value="Política">
+                <label for="resposta">Política</label>
+
+                <input type="checkbox" id="resposta" name="resposta" value="Policial">
+                <label for="resposta">Policial</label>
+
+
+            </div>
+
+
+            <div>
+                <input type="checkbox" id="resposta" name="resposta" value="Tempo">
+                <label for="resposta">Tempo</label>
+
+                <input type="checkbox" id="resposta" name="resposta" value="Cultura">
+                <label for="resposta">Cultura</label>
+
+                <input type="checkbox" id="resposta" name="resposta" value="Economia">
+                <label for="resposta">Economia</label>
+
+                <input type="checkbox" id="resposta" name="resposta" value="Jogos">
+                <label for="resposta">Jogos</label>
+
+                <input type="checkbox" id="resposta" name="resposta" value="Educação">
+                <label for="resposta">Educação</label>
+
+                <input type="checkbox" id="resposta" name="resposta" value="Viagem">
+                <label for="resposta">Viagem</label>
+
+                <input type="checkbox" id="resposta" name="resposta" value="Empregos">
+                <label for="resposta">Empregos</label>
+
+    
+            </div>
+
+            <div>
+
+                <input type="checkbox" id="resposta" name="resposta" value="Moda e Estilo">
+                <label for="resposta">Moda e Estilo</label> <br> <br>
+
+            </div>
+            
+                
+        
+
+
+             <input type="checkbox" id="resposta" name="resposta" 
+            value="Li as regras de cadastro e autorizo a criação do usuário">
+                 
+            
+             <label for="resposta">Li as regras de cadastro e autorizo 
+                a criação do usuário</label>
+
+
+                <label class="required-label"></label>
+                
+                
+                
+            
+                
+
+
+
+
+        
+                
+                
+                
+             
+        
+        
+        
+        
+        
+        
+            
+            
+            
+
+
+
+
+        </fieldset>
+
+        <label>
+
+            <button type="button">Confirmar</button>
+        </label>
+        <label>
+
+
+            <button type="button">Retornar</button>
+
+
+
+
+
+        </label>
+
+        
+
+
+
+
+
+
+        
+
+    </form>
+
+
+</body>
+</html>
